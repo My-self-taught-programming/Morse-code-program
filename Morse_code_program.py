@@ -54,20 +54,14 @@ def function_decode(decode_msg):
     print(eng_msg)
     print("------------------------------")
 
-
-# This "system_on" variable is set to the True Boolean
-# "system_on" starts the program and keeps it operating
-system_on = True
-
 # This is the display of my program
 print("********************************")
 print("*** Welcome to morse_code.py ***")
 print("********************************\n")
 print("Would you like to encode english to morse code?\nHow about decode morse code into english?")
 
-# This is a while loop that for as long as system_on
-# is set to True it will continually ask you for the user's input
-while system_on == True:
+# This is a while loop that for as long as it is True it will continually ask you for the user's input
+while True:
     # This variable using the user's input of the question below to gain the users request
     # for the Encode, or decode service or to quit the program
     service = input(
