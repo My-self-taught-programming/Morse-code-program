@@ -1,4 +1,4 @@
-
+import pyfiglet
 #This is the morse dictionary which contains the English alphabet and corresponding morse code.
 morse = {'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'F': '..-.', 'G': '--.', 'H': '....', 'I': '..',
          'J': '.---', 'K': '-.-', 'L': '.-..', 'M': '--', 'N': '-.', 'O': '---', 'P': '.--.', 'Q': '--.-', 'R': '.-.',
@@ -55,10 +55,8 @@ def function_decode(decode_msg):
     print("------------------------------")
 
 # This is the display of my program
-print("********************************")
-print("*** Welcome to morse_code.py ***")
-print("********************************\n")
-print("Would you like to encode english to morse code?\nHow about decode morse code into english?")
+banner = pyfiglet.figlet_format("WELCOME TO MORSECODER.PY")
+print(banner)
 
 # This is a while loop that for as long as it is True it will continually ask you for the user's input
 while True:
